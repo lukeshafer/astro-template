@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@trpc/client': ^10.9.0
+  '@trpc/server': ^10.9.0
   astro: ^1.9.0
   autoprefixer: ^10.4.13
   open-props: ^1.5.3
@@ -8,6 +10,8 @@ specifiers:
   postcss-nesting: ^10.2.0
 
 dependencies:
+  '@trpc/client': 10.9.0_@trpc+server@10.9.0
+  '@trpc/server': 10.9.0
   astro: 1.9.2
   autoprefixer: 10.4.13
   open-props: 1.5.3
@@ -488,6 +492,18 @@ packages:
     dependencies:
       '@proload/core': 0.3.3
       tsm: 2.3.0
+    dev: false
+
+  /@trpc/client/10.9.0_@trpc+server@10.9.0:
+    resolution: {integrity: sha512-id6318qpgqllNOuBp7nuciXFPXCe+zae5d4r1hze6Eyp5fFFNO58TqA+4Q44KIcHgpfWyW2egs6iPeql3PrdKA==}
+    peerDependencies:
+      '@trpc/server': 10.9.0
+    dependencies:
+      '@trpc/server': 10.9.0
+    dev: false
+
+  /@trpc/server/10.9.0:
+    resolution: {integrity: sha512-5psyZgbvy29pJND32hwkWTMbv6s86IbsPOeDopsgNF0VegZT6Dsijmb7Ub/TDhuJVQVq5u4u5briMXi3SxmBkw==}
     dev: false
 
   /@types/acorn/4.0.6:

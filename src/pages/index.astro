@@ -3,5 +3,23 @@ import BaseLayout from "../lib/layout/BaseLayout.astro";
 ---
 
 <BaseLayout>
-	<h1>Home!</h1>
+	<main class="center-content-block">
+		<h1>Home!</h1>
+		<p>This is a starter project for Astro projects which want to use:</p>
+		<ul>
+			<li>Typescript</li>
+			<li>TRPC</li>
+			<li>PostCSS</li>
+		</ul>
+		<p>...along with any other integrations, which can be added with:</p>
+		<code>npm run astro add [package]</code>
+		<code>pnpm astro add [package]</code>
+		<code>yarn astro add [package]</code>
+	</main>
 </BaseLayout>
+
+<style>
+	main {
+		padding: 2rem;
+	}
+</style>
